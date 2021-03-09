@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="MPMRCapstonePU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>mpmr.dto.Rating</class>
+    <class>mpmr.dto.HealthRecord</class>
+    <class>mpmr.dto.PackageTest</class>
+    <class>mpmr.dto.TestResultDetail</class>
+    <class>mpmr.dto.RoleUser</class>
+    <class>mpmr.dto.Lock</class>
+    <class>mpmr.dto.Clinic</class>
+    <class>mpmr.dto.UserFamilyGroup</class>
+    <class>mpmr.dto.DiseaseHealthRecord</class>
+    <class>mpmr.dto.TestResult</class>
+    <class>mpmr.dto.Test</class>
+    <class>mpmr.dto.SharedInformationType</class>
+    <class>mpmr.dto.Package</class>
+    <class>mpmr.dto.FamilyGroup</class>
+    <class>mpmr.dto.SharedInformation</class>
+    <class>mpmr.dto.TestTestRequest</class>
+    <class>mpmr.dto.Examination</class>
+    <class>mpmr.dto.Request</class>
+    <class>mpmr.dto.UserInfor</class>
+    <class>mpmr.dto.TestResultSample</class>
+    <class>mpmr.dto.Disease</class>
+    <class>mpmr.dto.TestRequest</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <shared-cache-mode>NONE</shared-cache-mode>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://eu-az-sql-serv1.database.windows.net:1433;databaseName=MPMRCapstone"/>
+      <property name="javax.persistence.jdbc.user" value="giangtct@eu-az-sql-serv1.database.windows.net"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="Kieuvanxinhdep1@"/>
+    </properties>
+  </persistence-unit>
+</persistence>
